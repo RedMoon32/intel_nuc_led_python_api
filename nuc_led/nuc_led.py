@@ -9,13 +9,13 @@ COLOUR = 'colour'
 
 
 class ColorIsNotValidException(Exception):
-    def __init___(self, color):
-        Exception.__init__(self, "Color {0} is not valid color".format(color))
+    def __init__(self, color):
+        super().__init__("Color {0} is not valid color".format(color))
 
 
 class StyleIsNotValidException(Exception):
-    def __init___(self, style):
-        Exception.__init__(self, "Style {0} is not valid style".format(style))
+    def __init__(self, style):
+        super().__init__("Style {0} is not valid style".format(style))
 
 
 class LED(ABC):
